@@ -316,12 +316,12 @@ function answerNo() {
 function createConfetti() {
   const container = document.querySelector(".confetti-container");
   const colors = [
-    "#7E57C2",
-    "#9575CD",
-    "#B39DDB",
-    "#D1C4E9",
-    "#E1BEE7",
-    "#F3E5F5",
+    "#E91E63",
+    "#FF4081",
+    "#F06292",
+    "#F48FB1",
+    "#F8BBD0",
+    "#FFF0F5",
   ];
 
   // Clear existing confetti
