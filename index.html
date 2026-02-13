@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For My Girl, TAONGA! ❤️</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Landing Section -->
+      <section id="landing" class="section active">
+        <div class="hearts-background">
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+          <div class="heart"></div>
+        </div>
+        <div class="content">
+          <h1 class="title">
+            For My Sweet Girl<span class="heart-icon">❤️</span>
+          </h1>
+          <p class="subtitle">Every day with you feels like dessert</p>
+          <button class="nav-btn" onclick="navigateTo('message')">
+            Open My Heart 💝
+          </button>
+          <div class="instructions">
+            <p>
+              <i class="fas fa-arrow-down"></i> Scroll down for more love
+              <i class="fas fa-arrow-down"></i>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Love Message Section -->
+      <section id="message" class="section">
+        <div class="content">
+          <h2>
+            <i class="fas fa-heart"></i> My Dearest Taonga
+            <i class="fas fa-heart"></i>
+          </h2>
+          <div class="message-box">
+            <p class="love-letter">
+              My love,<br /><br />
+              From the moment we met, you've filled my life with colors I never
+              knew existed. Every smile of yours is a sunrise, every laugh a
+              melody that makes my heart dance.<br /><br />
+              To make this Valentine's memorable, I want you to know that my
+              love for you grows stronger with each passing day. You are my
+              greatest adventure, my favorite dream come true, and the beautiful
+              story I want to keep writing forever.<br /><br />
+              Thank you for being you, for loving me, and for making every
+              moment in my life unforgettable.<br /><br />
+              Forever yours,<br />
+              <span class="signature">Joe.</span>
+            </p>
+          </div>
+          <button class="nav-btn" onclick="navigateTo('memories')">
+            Our Sweet Memories <i class="fas fa-images"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- Memories Section -->
+      <section id="memories" class="section">
+        <div class="content">
+          <h2>
+            <i class="fas fa-camera"></i> Some of Our Beautiful Moments
+            <i class="fas fa-camera"></i>
+          </h2>
+          <div class="memories-container">
+            <div class="memory-card">
+              <div class="memory-icon">💑</div>
+              <h3>The First Date!</h3>
+              <p>
+                Althought it wasn't officially a date, remember the first day we
+                met in town and I helped you with your grocery shopping
+              </p>
+            </div>
+            <div class="memory-card">
+              <div class="memory-icon">😂</div>
+              <h3>That Funny Moment!</h3>
+              <p>
+                Honestly, we laugh so much that I can't keep track of all the
+                funny moments we've shared
+              </p>
+            </div>
+            <div class="memory-card">
+              <div class="memory-icon">⭐</div>
+              <h3>My Favorite Thing About You!</h3>
+              <p>
+                Some people rush into arguments, but the fact that you choose
+                peace instead shows how much you value our relationship more
+                than winning a point. That’s a soft strength, not a weakness.
+              </p>
+            </div>
+          </div>
+          <button class="nav-btn" onclick="navigateTo('proposal')">
+            Will You Be My Valentine? 💘
+          </button>
+        </div>
+      </section>
+
+      <!-- Proposal Section -->
+      <section id="proposal" class="section">
+        <div class="content">
+          <h2>
+            <i class="fas fa-heart-circle-check"></i> The Most Important
+            Question <i class="fas fa-heart-circle-check"></i>
+          </h2>
+
+          <div class="proposal-container">
+            <div class="proposal-heart">
+              <div class="heart-pulse"></div>
+              <div class="heart-core">❤️</div>
+            </div>
+
+            <h3 class="proposal-question">Will you be my Valentine, Taonga?</h3>
+            <p class="proposal-subtext">
+              This year and every year that follows
+            </p>
+
+            <div class="answer-buttons">
+              <button class="answer-btn yes-btn" onclick="answerYes()">
+                <span>YES!</span>
+                <div class="confetti-container"></div>
+              </button>
+              <button class="answer-btn no-btn" onclick="answerNo()">No</button>
+            </div>
+
+            <div id="yesResponse" class="response-message">
+              <div class="celebration">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-heart"></i>
+              </div>
+              <h3>You've made me the happiest person in the world! 💝</h3>
+              <p class="celebration-text">
+                I promise to make this Valentine's Day and every day special for
+                you, my love.<br />
+                <span class="secret-message"
+                  >Wait for a surprise message! 💕</span
+                >
+              </p>
+              <div class="romantic-promises">
+                <div class="promise">
+                  <i class="fas fa-check-circle"></i> Dinner under the stars
+                </div>
+                <div class="promise">
+                  <i class="fas fa-check-circle"></i> Your favorite flowers
+                </div>
+                <div class="promise">
+                  <i class="fas fa-check-circle"></i> A surprise gift
+                </div>
+                <div class="promise">
+                  <i class="fas fa-check-circle"></i> Endless cuddles
+                </div>
+              </div>
+              <button class="nav-btn" onclick="navigateTo('gallery')">
+                Continue to Gallery <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+
+            <div id="noResponse" class="response-message">
+              <div class="sad-face">😢</div>
+              <h3>Oh no! Let me try again...</h3>
+              <p>
+                Are you sure, Sweetheart? Maybe these will change your mind:
+              </p>
+              <div class="persuasion">
+                <div class="persuade-item">
+                  <i class="fas fa-gift"></i>
+                  <p>I'll get you flowers every week</p>
+                </div>
+                <div class="persuade-item">
+                  <i class="fas fa-utensils"></i>
+                  <p>I'll cook your favorite meal</p>
+                </div>
+                <div class="persuade-item">
+                  <i class="fas fa-film"></i>
+                  <p>Movie marathon of your choice</p>
+                </div>
+              </div>
+              <div class="try-again">
+                <p>Please reconsider, my love...</p>
+                <button class="answer-btn yes-btn" onclick="answerYes()">
+                  Okay, YES! <i class="fas fa-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="proposal-instruction">
+            <p>
+              <i class="fas fa-hand-point-up"></i> Click your answer above
+              <i class="fas fa-hand-point-up"></i>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Photo Gallery -->
+      <section id="gallery" class="section">
+        <div class="content">
+          <h2>
+            <i class="fas fa-image"></i> Our Love Story in Frozen Time
+            <i class="fas fa-image"></i>
+          </h2>
+          <p class="gallery-subtitle">
+            Every picture tells a story of our love
+          </p>
+
+          <div class="gallery">
+            <!-- Photo Card 1 -->
+            <div class="photo-card">
+              <div class="photo-container">
+                <img
+                  src="Resources/joe_3.jpeg"
+                  alt="Our beautiful memory"
+                  class="gallery-photo"
+                />
+                <div class="photo-overlay">
+                  <div class="photo-icons">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="photo-info">
+                <h3>One of Our First Memories</h3>
+                <p>Remember this special moment?</p>
+                <div class="photo-date">
+                  <i class="far fa-calendar"></i>
+                  <span>Forever in my heart</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Card 2 -->
+            <div class="photo-card">
+              <div class="photo-container">
+                <img
+                  src="Resources/joe_2.jpeg"
+                  alt="Another beautiful memory"
+                  class="gallery-photo"
+                />
+                <div class="photo-overlay">
+                  <div class="photo-icons">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="photo-info">
+                <h3>That Amazing Day</h3>
+                <p>A day I'll never forget</p>
+                <div class="photo-date">
+                  <i class="far fa-calendar"></i>
+                  <span>My favorite memory</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Card 3 -->
+            <div class="photo-card">
+              <div class="photo-container">
+                <img
+                  src="Resources/joe_1.jpeg"
+                  alt="Our special moments"
+                  class="gallery-photo"
+                />
+                <div class="photo-overlay">
+                  <div class="photo-icons">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="photo-info">
+                <h3>Together Forever</h3>
+                <p>Just the beginning of our story</p>
+                <div class="photo-date">
+                  <i class="far fa-calendar"></i>
+                  <span>Always and forever</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="nav-btn" onclick="navigateTo('countdown')">
+            Valentine Countdown <i class="fas fa-clock"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- Countdown Section -->
+      <section id="countdown" class="section">
+        <div class="content">
+          <h2>
+            <i class="fas fa-clock"></i> Counting Every Moment Until Valentine's
+            Day <i class="fas fa-clock"></i>
+          </h2>
+          <div class="countdown-container">
+            <div class="countdown-box">
+              <span id="days" class="countdown-number">00</span>
+              <span class="countdown-label">Days</span>
+            </div>
+            <div class="countdown-box">
+              <span id="hours" class="countdown-number">00</span>
+              <span class="countdown-label">Hours</span>
+            </div>
+            <div class="countdown-box">
+              <span id="minutes" class="countdown-number">00</span>
+              <span class="countdown-label">Minutes</span>
+            </div>
+            <div class="countdown-box">
+              <span id="seconds" class="countdown-number">00</span>
+              <span class="countdown-label">Seconds</span>
+            </div>
+          </div>
+          <div class="final-message">
+            <h3>Every second brings me closer to you</h3>
+            <p>I love you more than words can express</p>
+          </div>
+          <button class="nav-btn" onclick="navigateTo('landing')">
+            Back to Beginning <i class="fas fa-home"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- Navigation Dots -->
+      <div class="nav-dots">
+        <span class="dot active" onclick="navigateTo('landing')"></span>
+        <span class="dot" onclick="navigateTo('message')"></span>
+        <span class="dot" onclick="navigateTo('memories')"></span>
+        <span class="dot" onclick="navigateTo('proposal')"></span>
+        <span class="dot" onclick="navigateTo('gallery')"></span>
+        <span class="dot" onclick="navigateTo('countdown')"></span>
+      </div>
+
+      <!-- Music Player -->
+      <div class="music-player">
+        <button id="musicBtn" onclick="toggleMusic()">
+          <i class="fas fa-music"></i>
+          <span>Love Song</span>
+        </button>
+        <audio id="loveSong" loop>
+          <source src="Resources/Ella-Mai-This-is.mpeg" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
